@@ -8,7 +8,7 @@ export NIX_PATH=nixpkgs=https://github.com/NixOS/nixpkgs/archive/$NIXPKGS_COMMIT
 
 STACK2NIX=$(nix-build -A stack2nix --no-out-link)/bin/stack2nix
 
-COMMIT=42e23ff588bb5b977977fb603b47b29bd2f07b4c
+COMMIT=4ecb198dae595d9b4b21e8ecba32f87ca95526ab
 URL=https://github.com/mpickering/haskell-ide-engine.git
 
 $STACK2NIX --revision $COMMIT $URL --stack-yaml=stack.yaml > ghc-8.6.nix
